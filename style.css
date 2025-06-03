@@ -1,0 +1,130 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  width: 100%;
+  max-width: 700px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #5b2ecc;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+#chat {
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 12px;
+  height: 400px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+}
+
+.msg {
+  margin: 12px 0;
+  padding: 12px 14px;
+  border-radius: 12px;
+  max-width: 80%;
+  font-size: 1.1em;
+  word-wrap: break-word;
+}
+
+.user {
+  background: #d1e7ff;
+  color: #084298;
+  align-self: flex-end;
+  text-align: right;
+  margin-left: auto;
+}
+
+.aura {
+  background: #d1ffd6;
+  color: #0f5132;
+  align-self: flex-start;
+  text-align: left;
+  margin-right: auto;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  transition: 0.3s;
+  font-size: 1em;
+}
+
+input[type="text"]:focus {
+  border-color: #5b2ecc;
+  outline: none;
+  background: #fff;
+}
+
+button {
+  background: #5b2ecc;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 1em;
+}
+
+button:hover {
+  background: #4522a0;
+}
+
+.quick-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.quick-buttons button {
+  flex: 1 1 45%;
+  background: #764ba2;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 0.95em;
+}
+
+.quick-buttons button:hover {
+  background: #5b2ecc;
+}
+
+#chat::-webkit-scrollbar {
+  width: 8px;
+}
+
+#chat::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
